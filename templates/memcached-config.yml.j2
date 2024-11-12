@@ -1,0 +1,22 @@
+integrations:
+  - name: nri-memcached
+    env:
+
+      # Memcached SASL username. Only required if
+      # authentication is enabled.
+      # USERNAME: cacheuser
+
+      # Memcached SASL password. Only required if
+      # authentication is enabled.
+      # PASSWORD: password
+
+      # Port memcached is running on.
+      # Defaults to 11211
+      PORT: "11211"
+
+      # Hostname of the memcached instance.
+      # Defaults to localhost.
+      HOST: localhost
+
+    interval: 15s
+    inventory_source: config/memcached
